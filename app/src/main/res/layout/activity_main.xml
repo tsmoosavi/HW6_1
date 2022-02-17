@@ -96,11 +96,62 @@
                 android:layout_weight="1"
                 android:text="Male" />
         </RadioGroup>
+
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-    </LinearLayout>
+            android:backgroundTint="#F66294"
+            android:text="Register"
+            app:cornerRadius="20dp">
 
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#2196F3"
+            android:text="Show Info"
+            app:cornerRadius="20dp">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp">
+
+        </com.google.android.material.textview.MaterialTextView>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp">
+
+        </com.google.android.material.textview.MaterialTextView>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp">
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp">
+
+        </com.google.android.material.textview.MaterialTextView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E3167F"
+            android:text="Hide Info"
+            app:cornerRadius="20dp"></com.google.android.material.button.MaterialButton>
+    </LinearLayout>
 </ScrollView>
 
 
