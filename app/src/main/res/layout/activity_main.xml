@@ -98,6 +98,7 @@
         </RadioGroup>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="#F66294"
@@ -107,48 +108,82 @@
         </com.google.android.material.button.MaterialButton>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/ShowInfo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="#2196F3"
             android:text="Show Info"
-            app:cornerRadius="20dp"></com.google.android.material.button.MaterialButton>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="40dp"
-            app:drawableTint="#C85555">
-
-        </com.google.android.material.textview.MaterialTextView>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="40dp"></com.google.android.material.textview.MaterialTextView>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="40dp">
-
-        </com.google.android.material.textview.MaterialTextView>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="40dp">
-
-        </com.google.android.material.textview.MaterialTextView>
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="#E3167F"
-            android:text="Hide Info"
             app:cornerRadius="20dp">
 
         </com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fullnamebox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#80DEEA"
+            app:cornerRadius="20dp"
+            android:visibility="gone">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/usernamebox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#80DEEA"
+            app:cornerRadius="20dp"
+            android:visibility="gone">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emailbox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#80DEEA"
+            app:cornerRadius="20dp"
+            android:visibility="gone">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/passwordbox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#80DEEA"
+            app:cornerRadius="20dp"
+            android:visibility="gone">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/genderbox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#80DEEA"
+            app:cornerRadius="20dp"
+            android:visibility="gone">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hidebox"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#E3167F"
+            android:text="Hide Info"
+            app:cornerRadius="20dp"
+            android:visibility="gone">
+
+        </com.google.android.material.button.MaterialButton>
+
     </LinearLayout>
 </ScrollView>
 
