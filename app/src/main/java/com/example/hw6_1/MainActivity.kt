@@ -14,8 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        binding.fullnamebox.visibility = View.GONE
-        binding.fullnamebox
+        initViews()
+        binding.ShowInfo.setOnClickListener{
+            initViews()
+        }
 
 
 
@@ -59,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 binding.genderbox.text = "female"
             }else
                 binding.genderbox.text = ""
+            showInfoBox()
             binding.fullnamebox.text = fullName
             binding.usernamebox.text = userName
             binding.emailbox.text = email
@@ -71,5 +74,24 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    private fun showInfoBox() {
+        binding.fullnamebox.visibility = View.VISIBLE
+        binding.usernamebox.visibility = View.VISIBLE
+        binding.emailbox.visibility = View.VISIBLE
+        binding.passwordbox.visibility = View.VISIBLE
+        binding.genderbox.visibility = View.VISIBLE
+        binding.hidebox.visibility = View.VISIBLE
+
+    }
+
+    private fun initViews() {
+        binding.fullnamebox.visibility = View.GONE
+        binding.usernamebox.visibility = View.GONE
+        binding.emailbox.visibility = View.GONE
+        binding.passwordbox.visibility = View.GONE
+        binding.genderbox.visibility = View.GONE
+        binding.hidebox.visibility = View.GONE
     }
 }
