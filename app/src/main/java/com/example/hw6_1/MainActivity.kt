@@ -22,22 +22,28 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.register.setOnClickListener{
+
             var infoCollection : SharedPreferences = getSharedPreferences("personalInformation",Context.MODE_PRIVATE)
             var editor = infoCollection.edit()
-            editor.putString("fullName", binding.FullName.text.toString())
-            editor.putString("userName", binding.UserName.text.toString())
-            editor.putString("Email", binding.Email.text.toString())
             var pass1 = binding.Password.text.toString()
             var pass2 = binding.ReTypePassword.text.toString()
-            if (pass1 != pass2){
-                binding.ReTypePassword.error = "گذرواژه ها یکسان نیستند. دوباره وارد کنید."
-            }else{
-                editor.putString("passWord", binding.Password.text.toString())
-                editor.putString("passWord2", binding.ReTypePassword.text.toString())
+            if (binding.FullName.text.isBlank()|| binding.UserName.text.isBlank()|| binding.Email.text.isBlank()||binding.Password.text.isBlank()||binding.ReTypePassword.text.isBlank()){
+                binding.FullName.error=" همه فیلد ها را پر کنید."
+            }else {
+                if (pass1 != pass2){
+                    binding.ReTypePassword.error = "گذرواژه ها یکسان نیستند. دوباره وارد کنید."
+                }else{
+                    editor.putString("fullName", binding.FullName.text.toString())
+                    editor.putString("userName", binding.UserName.text.toString())
+                    editor.putString("Email", binding.Email.text.toString())
+                    editor.putString("passWord", binding.Password.text.toString())
+                    editor.putString("passWord2", binding.ReTypePassword.text.toString())
+                    editor.putBoolean("fGender",binding.radioButton.isChecked)
+                    editor.putBoolean("mGender",binding.radioButton2.isChecked)
+                    editor.apply()
+                }
             }
-            editor.putBoolean("fGender",binding.radioButton.isChecked)
-            editor.putBoolean("mGender",binding.radioButton2.isChecked)
-            editor.apply()
+
 
 
         }
@@ -47,6 +53,12 @@ class MainActivity : AppCompatActivity() {
             var userName =infoCollection.getString("userName","")
             var email = infoCollection.getString("Email","")
             var passWord = infoCollection.getString("passWord","")
+            if (infoCollection.getBoolean("mGender",false)){
+                binding.genderbox.text = "male"
+            }else if (infoCollection.getBoolean("fGender",false)){
+                binding.genderbox.text = "female"
+            }else
+                binding.genderbox.text = ""
             binding.fullnamebox.text = fullName
             binding.usernamebox.text = userName
             binding.emailbox.text = email
