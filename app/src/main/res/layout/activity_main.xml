@@ -1,190 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center|top"
-        android:layout_margin="20dp"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/FullName"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:ems="10"
-            android:hint="Full Name"
-            android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:layout_gravity="center|top"
+            android:layout_margin="20dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
 
-        <EditText
-            android:id="@+id/UserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:ems="10"
-            android:hint="UserName"
-            android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/FullName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
 
-        <EditText
-            android:id="@+id/Email"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="16dp"
-            android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/UserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:ems="10"
+                android:hint="UserName"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
 
-        <EditText
-            android:id="@+id/Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
 
-        <EditText
-            android:id="@+id/ReTypePassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:ems="10"
-            android:hint="Re-Type Password"
-            android:inputType="textPassword"
-            android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
 
-        <TextView
-            android:id="@+id/Gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Gender"
-            android:textSize="20sp" />
+            <EditText
+                android:id="@+id/ReTypePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:ems="10"
+                android:hint="Re-Type Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="16dp"
-            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Gender"
+                android:textSize="20sp" />
 
-            <RadioButton
-                android:id="@+id/radioButton"
+            <RadioGroup
+                android:id="@+id/radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Female" />
-
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_gravity="left"
                 android:layout_marginLeft="16dp"
-                android:layout_weight="1"
-                android:text="Male" />
-        </RadioGroup>
+                android:orientation="horizontal">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/register"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="#F66294"
-            android:text="Register"
-            app:cornerRadius="20dp">
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female" />
 
-        </com.google.android.material.button.MaterialButton>
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="Male" />
+            </RadioGroup>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/ShowInfo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="#2196F3"
-            android:text="Show Info"
-            app:cornerRadius="20dp">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#F66294"
+                android:text="Register"
+                app:cornerRadius="20dp">
 
-        </com.google.android.material.button.MaterialButton>
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/fullnamebox"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#80DEEA"
-            app:cornerRadius="20dp"
-            android:visibility="gone">
+            </com.google.android.material.button.MaterialButton>
 
-        </com.google.android.material.button.MaterialButton>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ShowInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#2196F3"
+                android:text="Show Info"
+                app:cornerRadius="20dp">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/usernamebox"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#80DEEA"
-            app:cornerRadius="20dp"
-            android:visibility="gone">
+            </com.google.android.material.button.MaterialButton>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fullnamebox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#80DEEA"
+                app:cornerRadius="20dp">
 
-        </com.google.android.material.button.MaterialButton>
+            </com.google.android.material.button.MaterialButton>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/emailbox"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#80DEEA"
-            app:cornerRadius="20dp"
-            android:visibility="gone">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/usernamebox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#80DEEA"
+                app:cornerRadius="20dp">
 
-        </com.google.android.material.button.MaterialButton>
+            </com.google.android.material.button.MaterialButton>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/passwordbox"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#80DEEA"
-            app:cornerRadius="20dp"
-            android:visibility="gone">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emailbox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#80DEEA"
+                app:cornerRadius="20dp">
 
-        </com.google.android.material.button.MaterialButton>
+            </com.google.android.material.button.MaterialButton>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/genderbox"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#80DEEA"
-            app:cornerRadius="20dp"
-            android:visibility="gone">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/passwordbox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#80DEEA"
+                app:cornerRadius="20dp"
+                >
 
-        </com.google.android.material.button.MaterialButton>
+            </com.google.android.material.button.MaterialButton>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/hidebox"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="#E3167F"
-            android:text="Hide Info"
-            app:cornerRadius="20dp"
-            android:visibility="gone">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/genderbox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#80DEEA"
+                app:cornerRadius="20dp"
+                >
 
-        </com.google.android.material.button.MaterialButton>
+            </com.google.android.material.button.MaterialButton>
 
-    </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hidebox"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#E3167F"
+                android:text="Hide Info"
+                app:cornerRadius="20dp">
+            </com.google.android.material.button.MaterialButton>
+        </LinearLayout>
 </ScrollView>
+
+
 
 
