@@ -15,13 +15,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
-        binding.ShowInfo.setOnClickListener{
+        binding.hidebox.setOnClickListener{
             initViews()
         }
-
-
-
-
 
         binding.register.setOnClickListener{
 
